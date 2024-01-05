@@ -40,16 +40,16 @@ const githubData ={
 }
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hello World! on only slash page ')
 })
 app.get('/twitter', (req, res) => {
-    res.send('<h1>Eh twiiter ala page aw 604anmolstar')
+    res.send('<h1>Eh twiiter ala page aw 604anmolstar</h1>')
   })
   app.get('/youtube', (req, res) => {
     res.send('<h1>learnanmol</h1>')
   })
   app.get("/login",(req,res)=>{
-    res.send("you have been logined succussfully")
+    res.send("<h1>you have been logined succussfully</h1>")
   })
   app.get("/github",(req,res)=>{
     res.json(githubData)
